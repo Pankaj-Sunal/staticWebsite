@@ -3,20 +3,21 @@
 // Everything on the page reads from here, so you only change it once.
 // ------------------------------------------------------------------
 window.SITE_CONFIG = {
-  name: "Green Acres Farmhouse",
+  name: "The JARG Retreat",
 
   // Phone in international format, digits only for WhatsApp (no +, spaces or dashes)
-  phoneDisplay: "+91 98765 43210",
-  phoneTel: "+919876543210",
-  whatsappNumber: "919876543210",
-  whatsappDefaultMessage: "Hi! I'd like to enquire about a stay at Green Acres Farmhouse.",
+  phoneDisplay: "+91 98188 13556",
+  phoneTel: "+919818813556",
+  whatsappNumber: "919818813556",
+  whatsappDefaultMessage: "Hi! I'd like to enquire about a stay at The JARG Retreat.",
 
-  email: "stay@example.com",
+  email: "thejargretreat@gmail.com",
 
-  address: "Village Road, Near Lake View, Your City, State 000000",
+  address: "25 Oxy Green, Sector 150, Greater Noida, Uttar Pradesh",
   // Get this from Google Maps > Share > Embed a map > copy the src="..." URL
+  // TODO: replace with the real embed URL for "25 Oxy Green, Sector 150, Greater Noida"
   mapEmbedUrl:
-    "https://www.google.com/maps?q=India&output=embed",
+    "https://www.google.com/maps?q=25+Oxy+Green+Sector+150+Greater+Noida&output=embed",
 
   // Gallery: replace `src` with your own photos, e.g. "images/pool-1.jpg"
   // category must match one of the filter buttons: rooms, outdoor, pool, dining

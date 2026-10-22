@@ -1,4 +1,4 @@
-# Green Acres Farmhouse – Static Website
+# The JARG Retreat – Static Website
 
 A responsive one-page website for a farmhouse stay. It's built with plain HTML, Tailwind CSS (loaded from a CDN) and vanilla JavaScript, so there's **no build step**: what's in this folder is what gets hosted.
 
@@ -50,9 +50,9 @@ After 1–2 minutes the site is live at `https://<your-username>.github.io/<repo
 
 ## Connect your Cloudflare domain
 
-Say your domain is `greenacresfarm.in`.
+Your domain is `jarghomes.com`.
 
-**1. Tell GitHub the domain.** Rename `CNAME.example` to `CNAME`, replace its content with your domain (one line, e.g. `greenacresfarm.in`) and push.
+**1. Tell GitHub the domain.** Rename `CNAME.example` to `CNAME`, put `jarghomes.com` in it (one line) and push.
 You can also set it under **Settings → Pages → Custom domain**.
 
 **2. Add DNS records in Cloudflare** (Dashboard → your domain → **DNS → Records**):
@@ -78,3 +78,24 @@ Optional (IPv6): add AAAA records for `@` pointing to `2606:50c0:8000::153`, `26
 - **Tailwind CDN**: the browser build is great for learning, but it compiles CSS in the visitor's browser. For a faster production site, later switch to the [Tailwind CLI](https://tailwindcss.com/docs/installation/tailwind-cli) and commit the generated CSS file.
 - **Enquiry form**: there's no server, so the form opens WhatsApp or the visitor's email app with the details pre-filled. If you want form submissions delivered straight to your inbox, use a free service like [Formspree](https://formspree.io) or [Web3Forms](https://web3forms.com).
 - **Google listing**: add the site to [Google Search Console](https://search.google.com/search-console) and create a Google Business Profile so people can find the farmhouse.
+
+## Getting found on Google (SEO)
+
+The code already has the technical basics: a page title and description, a `robots.txt`, a `sitemap.xml`, and structured data (`LodgingBusiness`) that helps Google understand it's a place to stay. None of that guarantees a ranking by itself — the things below are what actually move it.
+
+**1. Fill in your real details everywhere.** Done: the real name (The JARG Retreat), address (Greater Noida) and phone are filled in across `index.html` and `js/config.js`. Double check the `postalCode` (currently a placeholder 201310) in the structured-data block in `index.html` against your actual PIN code.
+
+**2. Create a Google Business Profile** (business.google.com) — free, and usually the single biggest lever for "farmhouse near me" or "farmhouse stay in [city]" searches. Add photos, your phone number, hours, and your website link. Most farmhouse searches show the map/Business results above regular web results.
+
+**3. Submit the site to Google.**
+   - Verify your site in [Search Console](https://search.google.com/search-console) (use the domain property if you've connected Cloudflare, since it auto-generates the DNS verification record).
+   - Submit `https://jarghomes.com/sitemap.xml` under Sitemaps.
+   - Use "Request Indexing" on the homepage so Google crawls it right away instead of waiting.
+
+**4. Get backlinks.** Links from other sites to yours (local tourism directories, travel bloggers, Instagram/Facebook business page, local listing sites like Justdial/Sulekha if you're in India) are one of the strongest ranking signals. A brand-new site with zero backlinks rarely outranks established listing platforms for generic terms.
+
+**5. Collect reviews.** Reviews on your Google Business Profile (and mentions elsewhere) build trust signals that affect local ranking.
+
+**6. Keep it fast and mobile-friendly.** Google factors in page speed ("Core Web Vitals"). Compressing your real photos (see the Photos section above) matters more here than any meta tag.
+
+**Realistic expectation:** ranking #1 for your farmhouse's own name is achievable within weeks once it's indexed. Ranking #1 for a broad term like "farmhouse for stay" is very unlikely for a new site — that space is dominated by large listing platforms. Local searches ("farmhouse stay near [your area]") via Google Business Profile are where a small site like this realistically wins.
