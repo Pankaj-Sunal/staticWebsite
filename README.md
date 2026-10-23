@@ -50,9 +50,9 @@ After 1–2 minutes the site is live at `https://<your-username>.github.io/<repo
 
 ## Connect your Cloudflare domain
 
-Your domain is `jarghomes.com`.
+Your domain is `thejargretreat.com`.
 
-**1. Tell GitHub the domain.** Rename `CNAME.example` to `CNAME`, put `jarghomes.com` in it (one line) and push.
+**1. Tell GitHub the domain.** Rename `CNAME.example` to `CNAME`, put `thejargretreat.com` in it (one line) and push.
 You can also set it under **Settings → Pages → Custom domain**.
 
 **2. Add DNS records in Cloudflare** (Dashboard → your domain → **DNS → Records**):
@@ -89,7 +89,7 @@ The code already has the technical basics: a page title and description, a `robo
 
 **3. Submit the site to Google.**
    - Verify your site in [Search Console](https://search.google.com/search-console) (use the domain property if you've connected Cloudflare, since it auto-generates the DNS verification record).
-   - Submit `https://jarghomes.com/sitemap.xml` under Sitemaps.
+   - Submit `https://thejargretreat.com/sitemap.xml` under Sitemaps.
    - Use "Request Indexing" on the homepage so Google crawls it right away instead of waiting.
 
 **4. Get backlinks.** Links from other sites to yours (local tourism directories, travel bloggers, Instagram/Facebook business page, local listing sites like Justdial/Sulekha if you're in India) are one of the strongest ranking signals. A brand-new site with zero backlinks rarely outranks established listing platforms for generic terms.
